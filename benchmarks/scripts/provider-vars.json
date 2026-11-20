@@ -110,6 +110,9 @@
     "novita": [
       "NOVITA_API_KEY"
     ],
+    "orble": [
+      "ORBLE_API_KEY"
+    ],
     "opencomputer": [
       "OPENCOMPUTER_API_KEY",
       "OPENCOMPUTER_API_URL"

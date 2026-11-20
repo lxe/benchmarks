@@ -232,6 +232,7 @@
     "@computesdk/notte": "^0.3.30",
     "@computesdk/novita": "^0.0.23",
     "@computesdk/opencomputer": "^1.0.28",
+    "@computesdk/orble": "^0.1.0",
     "@computesdk/promigence": "^1.0.16",
     "@computesdk/quilt": "^1.0.26",
     "@computesdk/railway": "^2.0.26",

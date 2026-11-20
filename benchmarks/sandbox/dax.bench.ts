@@ -205,6 +205,8 @@ const DAX_RESOURCE_OPTIONS: Record<string, Record<string, any>> = {
   // cpu/memory create options; timeout is the same server-side TTL backstop
   // as blaxel/novita (the sandbox must outlive the 10-min build deadline).
   kosa8:        { timeout: 900_000 },
+  // Orble sizes via `size`; `l` is 8 vCPU / 16 GiB (with a 64 GiB disk).
+  orble:        { size: 'l' },
   // Boat sizes via fixed machine `type`; `large` is 8 vCPU / 16 GB.
   boat:         { type: 'large' },
   // Railway sizes via `resources` on create(); matches the 8 vCPU / 16 GiB

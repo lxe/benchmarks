@@ -29,6 +29,7 @@ import { mosaic } from '@computesdk/mosaic';
 import { namespace } from '@computesdk/namespace';
 import { northflank } from '@computesdk/northflank';
 import { novita } from '@computesdk/novita';
+import { orble } from '@computesdk/orble';
 // import { opencomputer } from '@computesdk/opencomputer';
 import { promigence } from '@computesdk/promigence';
 // import { quilt } from '@computesdk/quilt';
@@ -159,6 +160,11 @@ export const providers: ProviderConfig[] = [
     requiredEnvVars: ['DAYTONA_API_KEY'],
     createCompute: () => daytona({ apiKey: process.env.DAYTONA_API_KEY! }),
     sandboxOptions: { autoStopInterval: 15, autoDeleteInterval: 0, snapshotId: 'daytona-8cpu-16gb' },
+  },
+  {
+    name: 'orble',
+    requiredEnvVars: ['ORBLE_API_KEY'],
+    createCompute: () => orble({ apiKey: process.env.ORBLE_API_KEY! }),
   },
   {
     name: 'e2b',
